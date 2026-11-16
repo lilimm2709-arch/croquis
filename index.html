@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuestra Historia en la CDMX ❤️</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Nuestra Historia en la CDMX</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Nuestra Historia en la CDMX 🗺️✨</h1>
-    <p>El plano de los lugares que ya son nuestros. Toca cualquier punto del croquis para abrir el recuerdo.</p>
-  </header>
-
-  <main class="map-container">
-    <div class="croquis-board" id="croquis-board">
-
-      <svg class="map-roads" viewBox="0 0 900 580" preserveAspectRatio="none">
-        <!-- Vías principales estilizadas -->
-        <path d="M 150 500 Q 300 350 450 150" stroke="#d4c3ab" stroke-width="8" fill="none" stroke-dasharray="12,8" />
-        <path d="M 50 250 Q 450 300 850 200" stroke="#d4c3ab" stroke-width="6" fill="none" />
-        <path d="M 500 50 Q 550 300 520 530" stroke="#d4c3ab" stroke-width="7" fill="none" stroke-dasharray="8,6" />
-      </svg>
-
-      <!-- Los pines se generan por script -->
-      <div id="pins-layer"></div>
+  <!-- Lienzo principal del croquis con soporte táctil panorámico -->
+  <div class="map-container">
+    
+    <!-- Viñeta de título superior izquierda -->
+    <div class="map-title-box">
+      <h1>Nuestra Historia en la CDMX</h1>
+      <p>El plano secreto de nuestros lugares favoritos. Toca cualquier punto para abrir el recuerdo.</p>
     </div>
-  </main>
 
-  <!-- Ventana Modal -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span id="close-modal" class="close-btn">&times;</span>
-      <div class="modal-badge" id="modal-category">Lugar especial</div>
-      <h2 id="modal-title">Título</h2>
-      <div id="modal-body" class="modal-body"></div>
+    <!-- Viñeta de dedicatoria inferior derecha -->
+    <div class="map-footer-box">
+      <span>Hecho con mucho ❤️ para ti</span>
     </div>
+
+    <!-- Capa interactiva de pines con dimensiones amplias para explorar en móvil -->
+    <div id="pins-layer" class="pins-layer"></div>
   </div>
 
-  <footer>
-    <p>Hecho con mucho ❤️ especialmente para ti • CDMX</p>
-  </footer>
+  <!-- Ventana Modal de Recuerdos -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="close-modal" class="close-btn">✕</button>
+      <div id="modal-category" class="category-tag"></div>
+      <h2 id="modal-title" class="modal-title"></h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

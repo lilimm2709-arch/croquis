@@ -11,13 +11,15 @@
 html, body {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   background-color: #f4efe6;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   color: #332b22;
 }
 
-/* Contenedor principal con scroll suave panorámico en móvil */
+/* Contenedor principal con scroll panorámico habilitado para celular */
 .map-container {
   position: relative;
   width: 100vw;
@@ -25,9 +27,9 @@ html, body {
   background-color: #f7f3ec;
   background-image: 
     radial-gradient(rgba(200, 185, 165, 0.3) 1px, transparent 1px);
-  background-size: 35px 35px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  background-size: 40px 40px;
+  overflow: scroll !important; /* Fuerza el scroll en iOS y Android */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento fluido en iPhone */
 }
 
 /* Viñeta de Título Superior Izquierda */
@@ -72,17 +74,17 @@ html, body {
   z-index: 20;
 }
 
-/* Capa interna de pines con suficiente espacio horizontal para explorar */
+/* Capa de pines amplia para permitir explorar a lo ancho y alto */
 .pins-layer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1300px;
-  height: 900px;
+  width: 1500px;  /* Ancho amplio */
+  height: 1100px; /* Alto amplio */
   z-index: 10;
 }
 
-/* Pines estilizados */
+/* Pines con estilo de tarjeta orgánica flotante */
 .map-pin {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -94,12 +96,12 @@ html, body {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 600;
   color: #3b3028;
   border: 1px solid #dfd3c3;
   white-space: nowrap;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 15;
 }
 
 .map-pin:hover {
@@ -205,7 +207,7 @@ html, body {
 }
 
 /* ==========================================
-   ADAPTACIÓN PARA IPHONE (MÓVILES)
+   ADAPTACIÓN MÓVIL
    ========================================== */
 @media screen and (max-width: 768px) {
   .map-title-box {
@@ -229,11 +231,5 @@ html, body {
     right: 12px;
     font-size: 10.5px;
     padding: 6px 10px;
-  }
-
-  .modal-content {
-    width: 94%;
-    padding: 20px;
-    max-height: 78vh;
   }
 }
