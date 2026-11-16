@@ -7,8 +7,8 @@ const places = [
     name: "Universidad Panamericana",
     icon: "🎓",
     category: "Mixcoac",
-    top: "78%", 
-    left: "24%",
+    top: "72%", 
+    left: "28%",
     html: `
       <p><strong>El lugar:</strong> La UP. Un punto clave en nuestro día a día.</p>
       <p><strong>Lo que representa:</strong> Es el lugar donde comenzamos a conocernos. Recuerdo cuando vimos "The Shinning" y solo quería compartir más tiempo contigo mientras disfrutábamos de snacks de Café Diseño.</p>
@@ -19,8 +19,8 @@ const places = [
     name: "Beergarden Roma",
     icon: "🍻",
     category: "Colonia Roma",
-    top: "32%", 
-    left: "65%",
+    top: "35%", 
+    left: "62%",
     html: `
       <p><strong>El lugar:</strong> El lugar donde comenzó nuestra historia.</p>
       <p><strong>Lo que sentí:</strong> Sentí que mi alma ya te conocía. La conexión que tuvimos desde el momento 1 fue increíble y que también sea el lugar donde empezó la cuenta oficial de nuestro amor el 26 de julio de 2026, lo hace aún más especial.</p>
@@ -32,8 +32,8 @@ const places = [
     name: "Casa de Vale",
     icon: "🏠",
     category: "Punto Especial",
-    top: "64%", 
-    left: "54%",
+    top: "60%", 
+    left: "55%",
     html: `
       <p><strong>El lugar:</strong> Una dirección que ya es parte de nuestra historia.</p>
       <p><strong>Lo que significa:</strong> El lugar de nuestro primer beso. Tienes razón, no podía dejar de tocar tus brazos que siempre van a encantarme, te amo y recuerdo ese día con mucha emoción.</p>
@@ -45,8 +45,8 @@ const places = [
     name: "Casa de Roy",
     icon: "📍",
     category: "Disfrazados",
-    top: "54%", 
-    left: "20%",
+    top: "52%", 
+    left: "22%",
     html: `
       <p><strong>El lugar:</strong> Nuestra primera fiesta de disfraces.</p>
       <p><strong>Lo que representa:</strong> Los piratas más guapos. Me hizo mucha ilusión poder disfrazarme contigo amor y disfrutar a tu lado.</p>
@@ -58,12 +58,12 @@ const places = [
     name: "Teatro Metropólitan",
     icon: "🎭",
     category: "Centro Histórico",
-    top: "22%", 
-    left: "52%",
+    top: "26%", 
+    left: "48%",
     spotifyId: "2FSMtTgsTxHfMb90fVFvsx", // ID de Spotify para el Metropólitan
     html: `
       <p><strong>El lugar:</strong> Las luces, la emoción y el centro de la CDMX.</p>
-      <p><strong>Lo que sentí:</strong> Aunque no terminó de manera ideal, ha sido una de mis noches favoritas, fue mágico escuchar en vivo esas canciones que siempre me recordarán a ti. Dale play a esta canción que me recuerda a esa noche:</p>
+      <p><strong>Lo que sentí:</strong> Aunque no terminó de manera ideal, ha sido una de mis favoritas, fue mágico escuchar en vivo esas canciones que siempre me recordarán a ti. Dale play a esta canción que me recuerda a esa noche:</p>
     `
   },
   {
@@ -72,7 +72,7 @@ const places = [
     icon: "✨",
     category: "Nuestros primeros lugares",
     top: "42%", 
-    left: "76%",
+    left: "72%",
     html: `
       <p><strong>El lugar:</strong> Casa di Mahia y Verdanna.</p>
       <p><strong>Lo que significa:</strong> El mejor chai y las mejores galletas que me recuerdan a cuando empezamos a hablar.</p>
@@ -83,8 +83,8 @@ const places = [
     name: "Torre Manacar",
     icon: "🏢",
     category: "Insurgentes Sur",
-    top: "66%", 
-    left: "37%",
+    top: "64%", 
+    left: "38%",
     html: `
       <p><strong>El lugar:</strong> Cinemex, Manacar.</p>
       <p><strong>Lo que recuerdo:</strong> Latte alto con dos de Splenda y una película muy mala a la que nos colamos.</p>
@@ -95,8 +95,8 @@ const places = [
     name: "Galerías Insurgentes",
     icon: "🛍️",
     category: "Col. Del Valle",
-    top: "45%", 
-    left: "45%",
+    top: "46%", 
+    left: "42%",
     html: `
       <p><strong>El lugar:</strong> Galerías Insurgentes.</p>
       <p><strong>Lo que disfruto:</strong> Un vinito, una pizza, una pasta. Amarnos, reírnos y reencontrarnos.</p>
@@ -107,8 +107,8 @@ const places = [
     name: "Gabriel Mancera 1215",
     icon: "🏡",
     category: "Col. Del Valle",
-    top: "58%", 
-    left: "70%",
+    top: "56%", 
+    left: "68%",
     html: `
       <p><strong>El lugar:</strong> Gabriel Mancera.</p>
       <p><strong>Lo que significa:</strong> Mi casa, tu casa. Hemos compartido tanto aquí. Gracias por haberme dado el mejor regalo hace un año: un beso y el incio de lo que estamos construyendo juntos.</p>
@@ -120,7 +120,7 @@ const places = [
     icon: "🌳",
     category: "Poniente CDMX",
     top: "30%", 
-    left: "30%",
+    left: "32%",
     html: `
       <p><strong>El lugar:</strong> El pulmón de la ciudad.</p>
       <p><strong>Lo que sentí:</strong> Un paseo entre los árboles, luces y la mejor compañía. Esa noche me sentí tan feliz y plena a tu lado.</p>
@@ -132,8 +132,8 @@ const places = [
     name: "Cineteca Nacional (Xoco)",
     icon: "🎬",
     category: "Cultura y Cine",
-    top: "86%", 
-    left: "44%",
+    top: "78%", 
+    left: "45%",
     html: `
       <p><strong>El lugar:</strong> La Cineteca en Xoco.</p>
       <p><strong>Lo que representa:</strong> Nuestro primer San Valentín, gracias por haber pensado en todo. Los tulipanes, la manta y los lienzos.</p>
@@ -144,8 +144,8 @@ const places = [
     name: "Centro de Coyoacán",
     icon: "⛲",
     category: "Sur de la CDMX",
-    top: "88%", 
-    left: "78%",
+    top: "80%", 
+    left: "75%",
     html: `
       <p><strong>El lugar:</strong> Las calles empedradas y la vibra romántica de Coyoacán.</p>
       <p><strong>Lo que significa:</strong> Coyoacán se ha vuelto de mis lugares favoritos para compartir contigo. El museo de acuarela, donde renombramos las pinturas (mucho mejor), y hablamos sobre nosotros. Celebramos nuestro primer 15 de septiembre juntos y probamos más pan de muerto.</p>
@@ -156,8 +156,8 @@ const places = [
     name: "Mítikah",
     icon: "🏙️",
     category: "Xoco / Río Churubusco",
-    top: "76%", 
-    left: "62%",
+    top: "68%", 
+    left: "60%",
     html: `
       <p><strong>El lugar:</strong> Mítikah.</p>
       <p><strong>Lo que sentí:</strong> Estaba muy nerviosa cuando fuimos a ver "El Cadáver de la Novia", disfruté tanto verla contigo.</p>
@@ -169,7 +169,7 @@ const places = [
     icon: "🎤",
     category: "Oriente CDMX / Conciertos",
     top: "28%", 
-    left: "86%",
+    left: "82%",
     spotifyId: "7FCfMXYTIiQ9b4hDYs4Iol", // ID de Spotify para el Foro Sol
     html: `
       <p><strong>El lugar:</strong> El Estadio GNP Seguros, vibrando con música de la segunda mujer más guapa del mundo (tú ocupas el primer lugar).</p>
@@ -181,8 +181,8 @@ const places = [
     name: "Expo Santa Fe",
     icon: "🎪",
     category: "Poniente / Santa Fe",
-    top: "42%", 
-    left: "14%",
+    top: "44%", 
+    left: "15%",
     html: `
       <p><strong>El lugar:</strong> Expo Santa Fe, mi graduación.</p>
       <p><strong>Lo que sentí:</strong> Me sentí tan amada y apoyada por ti ese fin de semana, confirmé que eres el amor de mi vida y para mi vida.</p>
@@ -195,7 +195,7 @@ const places = [
     icon: "🗽",
     category: "Reforma",
     top: "18%", 
-    left: "38%",
+    left: "35%",
     html: `
       <p><strong>El lugar:</strong> Paseo de la Reforma en pleno mundial.</p>
       <p><strong>Lo que sentí:</strong> Nos engentamos, nos empapamos, pero cualquier momento a tu lado es maravilloso. Amo ser pegajosa y cursi contigo, aunque a Rose no le encantó jajaja. Mira este video:</p>
