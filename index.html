@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestra Historia en la CDMX ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Nuestra Historia en la CDMX 🗺️✨</h1>
+    <p>El plano de los lugares que ya son nuestros. Toca cualquier punto del croquis para abrir el recuerdo.</p>
+  </header>
+
+  <main class="map-container">
+    <div class="croquis-board" id="croquis-board">
+
+      <svg class="map-roads" viewBox="0 0 900 580" preserveAspectRatio="none">
+        <!-- Vías principales estilizadas -->
+        <path d="M 150 500 Q 300 350 450 150" stroke="#d4c3ab" stroke-width="8" fill="none" stroke-dasharray="12,8" />
+        <path d="M 50 250 Q 450 300 850 200" stroke="#d4c3ab" stroke-width="6" fill="none" />
+        <path d="M 500 50 Q 550 300 520 530" stroke="#d4c3ab" stroke-width="7" fill="none" stroke-dasharray="8,6" />
+      </svg>
+
+      <!-- Los pines se generan por script -->
+      <div id="pins-layer"></div>
+    </div>
+  </main>
+
+  <!-- Ventana Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn">&times;</span>
+      <div class="modal-badge" id="modal-category">Lugar especial</div>
+      <h2 id="modal-title">Título</h2>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Hecho con mucho ❤️ especialmente para ti • CDMX</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
