@@ -16,7 +16,7 @@ body {
   height: 100vh;
 }
 
-/* Contenedor del mapa en pantalla completa con textura fina */
+/* Contenedor del mapa adaptable con desplazamiento panorámico para móviles */
 .map-container {
   position: relative;
   width: 100vw;
@@ -25,7 +25,8 @@ body {
   background-image: 
     radial-gradient(rgba(200, 185, 165, 0.25) 1px, transparent 1px);
   background-size: 32px 32px;
-  overflow: hidden;
+  overflow: auto !important; /* Permite deslizarte por todo el mapa en el celular */
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Viñeta de Título Superior Izquierda (Estilo etiqueta de mapa) */
@@ -72,13 +73,13 @@ body {
   letter-spacing: 0.2px;
 }
 
-/* Capa de pines */
+/* Capa interna amplia para alojar los pines sin que se recorten */
 .pins-layer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 1400px; /* Ancho extendido cómodo para exploración móvil */
+  height: 100vh;
   z-index: 10;
 }
 
@@ -217,7 +218,7 @@ body {
    ADAPTACIÓN ESPECIAL PARA IPHONE Y MÓVILES
    ========================================== */
 @media screen and (max-width: 768px) {
-  /* La tarjeta de título superior se hace más compacta para que no tape los pines */
+  /* La tarjeta de título superior se adapta mejor en pantallas pequeñas */
   .map-title-box {
     top: 15px;
     left: 15px;
@@ -234,7 +235,7 @@ body {
     font-size: 12px;
   }
 
-  /* La firma de amor pasa a un lugar discreto abajo */
+  /* La firma de amor se posiciona de forma discreta abajo */
   .map-footer-box {
     bottom: 15px;
     right: 15px;
@@ -242,7 +243,7 @@ body {
     padding: 6px 12px;
   }
 
-  /* El modal (ventana emergente) ocupa un tamaño ideal en la pantalla del celular */
+  /* El modal se ajusta perfectamente a la pantalla del iPhone */
   .modal-content {
     width: 92%;
     max-height: 80vh;
